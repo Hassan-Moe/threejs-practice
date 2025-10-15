@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid Glass Switch</title>
+
+    <!-- Spline runtime -->
+    <script src="https://unpkg.com/@splinetool/runtime@1.0.7/build/runtime.js"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="spline-canvas"></canvas>
+
+    <script>
+      // Initialize Spline runtime with your exported JSON or assets
+      // Replace this URL with the actual exported scene file from Spline
+      const splineSceneURL = "./scene.json";
+
+      const app = new Spline.Runtime({
+        canvas: document.getElementById("spline-canvas"),
+        url: splineSceneURL,
+      });
+
+      // Listen for clicks on the canvas to notify React
+      const canvas = document.getElementById("spline-canvas");
+      canvas.addEventListener("click", () => {
+        window.parent.postMessage("switchClicked", "*");
+      });
+
+      // Optional: play animations, initialize objects, etc.
+      app.on("ready", () => {
+        console.log("Spline scene loaded");
+      });
+    </script>
+  </body>
+</html>
