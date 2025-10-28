@@ -10,7 +10,7 @@ export const DummyContent = () => {
       {/* <div style={{ width: "100%", height: 600, position: "relative" }}> */}
       {/* </div> */}
       <div className="container mx-auto">
-        <div className="absolute -z-10">
+        <div className="absolute -z-10 inset-0">
           <Orb
             hoverIntensity={0.5}
             rotateOnHover={true}
