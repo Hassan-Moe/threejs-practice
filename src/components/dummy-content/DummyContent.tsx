@@ -1,10 +1,24 @@
 import React from "react";
 import BlurText from "../BlurText";
+import GradientText from "../GradientText";
+import LiquidEther from "../LiquidEther";
+import Orb from "../Orb";
 
 export const DummyContent = () => {
   return (
     <div className="">
+      {/* <div style={{ width: "100%", height: 600, position: "relative" }}> */}
+      {/* </div> */}
       <div className="container mx-auto">
+        <div className="absolute -z-10">
+          <Orb
+            hoverIntensity={0.5}
+            rotateOnHover={true}
+            hue={0}
+            forceHoverState={false}
+          />
+        </div>
+
         {/* Hero Section */}
         <section
           className=""
@@ -16,7 +30,7 @@ export const DummyContent = () => {
           }}
         >
           <BlurText
-            text="The Blades of the Witcher?!"
+            text="WHAT ARE WE DOING HERE?!"
             delay={150}
             animateBy="words"
             direction="top"
@@ -24,6 +38,14 @@ export const DummyContent = () => {
             className="mb-8 text-6xl"
           />
         </section>
+        <GradientText
+          colors={["#15ff00", "#ff0000"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class text-4xl"
+        >
+          Add a splash of color! for the hero section.
+        </GradientText>
 
         {/* Section 2 */}
         <section

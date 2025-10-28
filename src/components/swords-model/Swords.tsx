@@ -3,10 +3,11 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { SwordsModel } from "./SwordsModel";
+import { CtrlScrollControls } from "@/base-components/ctrl-scroll-controls/CtrlScrollControls";
 
 export default function Swords() {
   return (
-    <Canvas shadows camera={{ position: [2, 1, 2], fov: 40 }}>
+    <Canvas shadows camera={{ position: [0, 3, 6], fov: 60 }}>
       <ambientLight intensity={0.3} />
       {/* <axesHelper args={[5]}></axesHelper>
         <gridHelper args={[10, 10]}></gridHelper> */}
@@ -17,8 +18,7 @@ export default function Swords() {
       {/* Your sword model */}
       <SwordsModel position={[0, 0, 0]} />
 
-      {/* Camera controls */}
-      <OrbitControls enablePan={true} enableZoom={false} enableRotate={true} />
+      <CtrlScrollControls />
     </Canvas>
   );
 }

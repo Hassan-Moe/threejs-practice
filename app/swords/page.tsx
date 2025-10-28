@@ -14,13 +14,10 @@ const WitcherSwordsPage = () => {
           className=""
           style={{
             height: "100vh",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "60px", textAlign: "center" }}>
-            The Blades of the Witcher
+          <h1 style={{ fontSize: "40px", textAlign: "center" }}>
+            WHAT ARE WE DOING HERE?
           </h1>
         </section>
         {/* Section 2 */}

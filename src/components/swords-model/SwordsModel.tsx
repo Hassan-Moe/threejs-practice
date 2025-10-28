@@ -1,8 +1,7 @@
 "use client";
-import { Scene } from "@/base-components/scene/Scene";
 
 import * as THREE from "three";
-import React, { JSX, useRef } from "react";
+import React, { JSX } from "react";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
@@ -28,7 +27,7 @@ export function SwordsModel(props: JSX.IntrinsicElements["group"]) {
   ) as any as GLTFResult;
   return (
     <group {...props} dispose={null}>
-      <group scale={0.001}>
+      <group scale={0.005}>
         <group
           position={[0, 248.01, 0]}
           rotation={[-Math.PI / 2, -1.361, -Math.PI / 2]}

@@ -69,12 +69,11 @@ export default function Home() {
               />
             </div>
             <div className="w-full bg-gray-200 my-10"></div> */}
-            <p>POLY SPHERE</p>
             {/* <div className="w-full bg-gray-200 my-10"></div>
             <p>3D - Earth</p>
             <PlanetEarth /> */}
             <div className=" ">
-              <div className="  border fixed w-full -z-10 inset-0 min-h-screen border-red-700 ">
+              <div className="  fixed w-full -z-10 inset-0 min-h-screen  ">
                 <PolySphere />
               </div>
               <DummyContent />
