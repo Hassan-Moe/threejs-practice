@@ -6,7 +6,7 @@ import { LiquidGlass } from "@liquidglass/react";
 import { Sun, Moon, X } from "lucide-react";
 import { useUIThemeStore } from "@/store";
 
-const NAV_ITEMS = ["Home", "Projects", "About", "Contact"];
+const NAV_ITEMS = ["Home", "Swords", "About", "Contact"];
 
 export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
     <div className="fixed top-4 left-1/2 z-[9999] -translate-x-1/2 w-fit">
       <LiquidGlass
         borderRadius={200}
-        blur={4}
+        blur={1}
         contrast={1}
         brightness={1.45}
         shadowIntensity={0}
@@ -66,10 +66,10 @@ export const Navbar: React.FC = () => {
               <a
                 key={item}
                 ref={(el) => (linkRefs.current[index] = el) as any}
-                href={`#${item.toLowerCase()}`}
+                href={`${item.toLowerCase()}`}
                 className="relative z-10 px-4 py-2 rounded-full text-sm text-accent-foreground font-medium transition-colors duration-300"
                 onClick={(e) => {
-                  e.preventDefault();
+                  // e.preventDefault();
                   setActiveIndex(index);
                 }}
               >
