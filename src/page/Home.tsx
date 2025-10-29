@@ -1,19 +1,20 @@
 "use client";
 // Main Home page component
 import { Button } from "@/base-components/button/Button";
-import { Scene } from "@/base-components/scene/Scene";
+// import { Scene } from "@/base-components/scene/Scene";
 import { DummyContent } from "@/components/dummy-content/DummyContent";
-import GradualBlur from "@/components/GradualBlur";
+// import GradualBlur from "@/components/GradualBlur";
 import { Navbar } from "@/components/navbar/Navbar";
-
-import { PlanetEarth } from "@/components/planet-earth/PlanetEarth";
 import { PolySphere } from "@/components/poly-sphere/PolySphere";
-import SimpleSphere from "@/components/simple-sphere/SimpleSphere";
-import Swords from "@/components/swords-model/Swords";
-import { SwordsModel } from "@/components/swords-model/SwordsModel";
-import ThreeTest from "@/components/three-test/ThreeTest";
+//
+// import { PlanetEarth } from "@/components/planet-earth/PlanetEarth";
+// import { PolySphere } from "@/components/poly-sphere/PolySphere";
+// import SimpleSphere from "@/components/simple-sphere/SimpleSphere";
+// import Swords from "@/components/swords-model/Swords";
+// import { SwordsModel } from "@/components/swords-model/SwordsModel";
+// import ThreeTest from "@/components/three-test/ThreeTest";
 import { useUIThemeStore } from "@/store/uiTheme.store";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Home() {
   // Theme state from Zustand store
@@ -21,7 +22,7 @@ export default function Home() {
   const isDarkMode = useUIThemeStore((state) => state.isDarkMode);
 
   // Local state to toggle iframe interaction
-  const [isOn, setIsOn] = useState<boolean>(false);
+  // const [isOn, setIsOn] = useState<boolean>(false);
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import React from "react";
 import BlurText from "../BlurText";
 import GradientText from "../GradientText";
-import LiquidEther from "../LiquidEther";
+
 import Orb from "../Orb";
 
 export const DummyContent = () => {
