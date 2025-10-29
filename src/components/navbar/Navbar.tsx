@@ -68,7 +68,7 @@ export const Navbar: React.FC = () => {
                 ref={(el) => (linkRefs.current[index] = el) as any}
                 href={`${item.toLowerCase()}`}
                 className="relative z-10 px-4 py-2 rounded-full text-sm text-accent-foreground font-medium transition-colors duration-300"
-                onClick={(e) => {
+                onClick={() => {
                   // e.preventDefault();
                   setActiveIndex(index);
                 }}

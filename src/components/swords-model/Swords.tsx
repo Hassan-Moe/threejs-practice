@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { SwordsModel } from "./SwordsModel";
 import { CtrlScrollControls } from "@/base-components/ctrl-scroll-controls/CtrlScrollControls";
 
